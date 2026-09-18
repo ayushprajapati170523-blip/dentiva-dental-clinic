@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import BookAppointment from './pages/BookAppointment';
-import Payment from './pages/Payment';
+import Payment from "./pages/payment";
 import MyAppointment from './pages/MyAppointment';
 
 // Admin Pages & Auth
