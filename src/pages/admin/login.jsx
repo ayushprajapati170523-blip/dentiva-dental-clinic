@@ -16,7 +16,7 @@ export default function Login() {
       setError('');
       navigate('/admin');
     } else {
-      setError('Invalid credentials. Use admin@dentiva.com / admin123');
+      setError("Invalid Email or Password");
     }
   };
 
