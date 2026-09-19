@@ -10,7 +10,6 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Demo credentials check
     if (email === 'admin@dentiva.com' && password === 'admin123') {
       localStorage.setItem('dentiva_auth', 'true');
       setError('');
@@ -46,7 +45,7 @@ export default function Login() {
               <input
                 type="email"
                 required
-                placeholder="admin@dentiva.com"
+                placeholder="enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5b7c65]"
@@ -76,10 +75,6 @@ export default function Login() {
             Sign In
           </button>
         </form>
-
-        <div className="mt-6 text-center text-xs text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
-          Demo Credentials: <span className="font-semibold text-slate-700">admin@dentiva.com</span> / <span className="font-semibold text-slate-700">admin123</span>
-        </div>
       </div>
     </div>
   );
